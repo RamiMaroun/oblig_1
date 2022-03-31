@@ -3,7 +3,7 @@ import threading
 
 # We will need an IP-address for the host and a free port number for our server.
 # In this example, we will use the localhost address (127.0.0.1) and the port 828282.
-host = '127.0.0.1'
+host = "127.0.0.1"
 port = 55555
 
 # Starting Server
@@ -15,8 +15,6 @@ port = 55555
 # We  put our server into listening mode, so that it waits for clients to connect.
 # we create two empty lists, which we will use to store the connected clients and their nicknames later on.
 # Connection Data
-host = '127.0.0.1'
-port = 55555
 
 # Starting Server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -68,7 +66,7 @@ def receive():
 
         # Print And Broadcast Nickname
         print("Nickname is {}".format(nickname))
-        broadcast("{} You are welcome!".format(nickname).encode('ascii'))
+        broadcast("{} joined".format(nickname).encode('ascii'))
         client.send('Connected to server!'.encode('ascii'))
 
         # Start Handling Thread For Client

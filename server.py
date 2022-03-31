@@ -2,7 +2,7 @@ import socket
 import threading
 
 # We will need an IP-address for the host and a free port number for our server.
-# In this example, we will use the localhost address (127.0.0.1) and the port 828282.
+# In this example, we will use the localhost address (127.0.0.1) and the port 55555.
 host = "127.0.0.1"
 port = 55555
 
